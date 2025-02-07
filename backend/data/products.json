@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Nuts",
+    "details": "sjdui howhu wo",
+    "image": "https://www.ofi.com/content/dam/olamofi/products-and-ingredients/nuts/nuts-images/nuts-banner-img.webp",
+    "Orginalprice": "90",
+    "CurrentPrice": "70",
+    "category": "Dry Fruits and Nuts",
+    "measurement": "500gm"
+  },
+  {
+    "title": "Fruits",
+    "details": "sjdui howhu wo",
+    "image": "https://www.ofi.com/content/dam/olamofi/products-and-ingredients/nuts/nuts-images/nuts-banner-img.webp",
+    "Orginalprice": "300",
+    "CurrentPrice": "102",
+    "category": "Dry Fruits and Nuts",
+    "measurement": "500gm"
+  },
+  {
+    "title": "Rice",
+    "details": "sjdui howhu wo",
+    "image": "https://www.ofi.com/content/dam/olamofi/products-and-ingredients/nuts/nuts-images/nuts-banner-img.webp",
+    "Orginalprice": "432",
+    "CurrentPrice": "65",
+    "category": "Rice",
+    "measurement": "500gm"
+  },
+  {
+    "title": "Health Mix",
+    "details": "sjdui howhu wo",
+    "image": "https://www.ofi.com/content/dam/olamofi/products-and-ingredients/nuts/nuts-images/nuts-banner-img.webp",
+    "Orginalprice": "432",
+    "CurrentPrice": "65",
+    "category": "Mix",
+    "measurement": "500gm"
+  }
+]
