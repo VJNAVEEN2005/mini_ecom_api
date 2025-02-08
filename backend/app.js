@@ -10,12 +10,16 @@ dotenv.config({path: path.join(__dirname, 'config', 'config.env')})
 
 const products = require('./routes/product')
 const orders = require('./routes/order')
+const signup = require('./routes/signup')
+const login = require('./routes/login')
 
 connectDatabase()
 
 app.use(express.json())
 app.use('/api/v1/',products)
 app.use('/api/v1/',orders)
+app.use('/api/v1/',signup)
+app.use('/api/v1/',login)
 
 app.listen(process.env.PORT, ()=>{
     console.log(`Server listening to Port ${process.env.PORT} in ${process.env.NODE_ENV}`)
