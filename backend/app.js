@@ -16,6 +16,10 @@ const login = require('./routes/login')
 connectDatabase()
 
 app.use(express.json())
+app.use('/',(req,res)=>{
+    res.send('<h1>Hello World</h1><p>Server Working fine</p>')
+    console.log("hello")
+})
 app.use('/api/v1/',products)
 app.use('/api/v1/',orders)
 app.use('/api/v1/',signup)
