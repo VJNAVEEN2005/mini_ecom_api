@@ -12,18 +12,17 @@ const products = require('./routes/product')
 const orders = require('./routes/order')
 const signup = require('./routes/signup')
 const login = require('./routes/login')
+const cart = require('./routes/cart')
 
 connectDatabase()
 
 app.use(express.json())
-app.use('/',(req,res)=>{
-    res.send('<h1>Hello World</h1><p>Server Working fine</p>')
-    console.log("hello")
-})
+
 app.use('/api/v1/',products)
 app.use('/api/v1/',orders)
 app.use('/api/v1/',signup)
 app.use('/api/v1/',login)
+app.use('/api/v1/',cart)
 
 app.listen(process.env.PORT, ()=>{
     console.log(`Server listening to Port ${process.env.PORT} in ${process.env.NODE_ENV}`)
