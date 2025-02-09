@@ -1,10 +1,12 @@
 const mongoose = require('mongoose')
 
 const orderSchema = new mongoose.Schema({
+    userId:String,
     cartItems: Array,
     amount: String,
     status: String,
-    createdAt: Date
+    paymentNumber:String,
+    createdAt: Array
 })
 
 const orderModel = mongoose.model('Order',orderSchema)
