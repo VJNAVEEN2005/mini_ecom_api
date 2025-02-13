@@ -116,3 +116,41 @@ exports.GetCart = async (req, res, next) => {
         res.status(500).json({ success: false, message: "Internal Server Error" });
     }
 };
+
+exports.UpdateCart = async (req, res, next) => {
+
+    const update = req.body
+    const userId = req.body.userId
+    console.log(update,userId)
+    const result = await cartModel.updateOne({userId},update)
+    try{
+        res.json({
+            success: true,
+            result
+        })
+    
+    } catch(err) {
+        res.json({
+            success: false,
+            message: err.message
+        })
+    }
+    }
+
+exports.cartdata = async (req, res, next) => {
+    const userId = req.body.userId
+    const result = await cartModel.find({userId})
+    try{
+        res.json({
+            success: true,
+            result
+        })
+    
+    } catch(err) {
+        res.json({
+            success: false,
+            message: err.message
+        })
+    }
+
+}
