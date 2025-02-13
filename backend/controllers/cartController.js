@@ -116,15 +116,3 @@ exports.GetCart = async (req, res, next) => {
         res.status(500).json({ success: false, message: "Internal Server Error" });
     }
 };
-
-exports.UpdateCart = async ((req, res, next)=>{
-    try{
-        res.json({
-            success: true,
-        });
-    }catch{
-        res.json({
-            success: false,
-        });
-    }
-})
